@@ -1,0 +1,16 @@
+body {
+    background-color: #232324;
+    color: #e0a2a2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+p {
+    color: #dadada;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+strong {
+    color: #916a6a;
+    font-size: 25px; 
+}
