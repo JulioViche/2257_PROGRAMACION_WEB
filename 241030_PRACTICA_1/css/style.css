@@ -1,18 +1,19 @@
 body {
     background-color: #232324;
-    color: #e0a2a2;
-    font-family: 'Courier New', Courier, monospace;
+    color: #e05656;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 
 p {
     color: #dadada;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
 strong {
     color: #916a6a;
-    font-size: 25px; 
+    font-size: 18px; 
 }
 
 dt {
