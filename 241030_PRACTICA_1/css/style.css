@@ -1,14 +1,17 @@
 body {
     background-color: #232324;
-    color: #e05656;
+    color: #dadada;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+h1, h2 {    
+    color: #b42d2d;
 }
 
 p {
     color: #dadada;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
 }
 
 strong {
@@ -17,6 +20,6 @@ strong {
 }
 
 dt {
-    color: #dadada;
+    color: #916a6a;
     font-size: 20px;
 }
