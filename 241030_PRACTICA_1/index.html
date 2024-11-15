@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,26 @@
                 <h1>Automóviles Deportivos</h1>
             </center>  
         </header>
+        <nav>
+            Home | <a href="index2.html">Datos</a> | <a href="../241108_PORTAFOLIO/index.html">Más</a>
+            <form action="sumbit" method="post">
+                <input type="text" id="nombre" placeholder="Nombres">
+                <br>
+                <input type="text" id="apellido" placeholder="Apellidos">
+                <br>
+                <input type="password" id="contraseña" placeholder="Contraseña">
+                <br>
+                <label for="select">Tipo: </label>
+                <select id="">
+                    <option>Estudiante</option>
+                    <option>Docente</option>
+                    <option>Administrativo</option>
+                </select>
+            </form>
+        </nav>
         <section>
             <h2 id="lambo_title">Lamborghini Sesto Elemento</h2>
-            <p>El Lamborghini Sesto Elemento nacido como prototipo de automóvil superdeportivo y después, ya como parte de la gama de producción para su uso exclusivamente en la pista. Fue presentado por el fabricante italiano <strong>Lamborghini</strong> en el Salón del Automóvil de París 2010 de finales del mes de septiembre.</p>
+            <p>El <em>Lamborghini Sesto Elemento</em> nacido como prototipo de <span class="category">automóvil superdeportivo</span> y después, ya como parte de la gama de producción para su uso exclusivamente en la pista. Fue presentado por el fabricante italiano <strong>Lamborghini</strong> en el Salón del Automóvil de París 2010 de finales del mes de septiembre.</p>
             <dl>
                 <dt>Datos del motor</dt>
                 <dd>Modelo: V10 90°</dd>
@@ -26,13 +43,16 @@
             </dl>
             <center>
                 <a href="https://es.wikipedia.org/wiki/Lamborghini_Sesto_Elemento" target="_blank">
-                    <img src="images/lambo.jpeg" alt="Sesto Elemento" width="400">
+                    <figure>
+                        <img src="images/lambo.jpeg" alt="Sesto Elemento" width="400">
+                        <figcaption>Lamborghini Sesto Elemento</figcaption>
+                    </figure>
                 </a>
             </center>
         </section>
         <section>
             <h2 id="mclaren_title">McLaren P1</h2>
-            <p>El McLaren P1 es un automóvil superdeportivo híbrido eléctrico enchufable de edición ddmitada, producido por el fabricante automotriz británico <strong>McLaren Automotive</strong> de 2013 hasta principios de diciembre de 2015.</p>
+            <p>El <em>McLaren P1</em> es un <span class="category">automóvil superdeportivo híbrido eléctrico enchufable</span> de edición limitada, producido por el fabricante automotriz británico <strong>McLaren Automotive</strong> de 2013 hasta principios de diciembre de 2015.</p>
             <dl>
                 <dt>Datos del motor</dt>
                 <dd>Motor: V8 90°</dd>
@@ -43,12 +63,17 @@
             </dl>
             <center>
                 <a href="https://www.mclaren.com/" target="_blank">
-                    <img src="images/mclaren.jpeg" alt="McLaren P1" width="400">
+                    <figure>
+                        <img src="images/mclaren.jpeg" alt="McLaren P1" width="400">
+                        <figcaption>Mclaren P1</figcaption>
+                    </figure>
                 </a>
             </center>
         </section>
+        <input type="text" name="buscar">
+        <button id="button1">Buscar</button>
         <footer>
-            <p class="author">Diseñado por: Julio Viche</p>
+            <p class="author">Diseñado por: Julio Viche ©</p>
         </footer>
     </div>
 </body>

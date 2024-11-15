@@ -44,3 +44,18 @@ dt {
     max-width: 800px;
     margin: 0 auto;
 }
+
+.category {
+    color: #dadada99;
+    font-style: italic;
+}
+
+#button1 {
+    color: #dadada;
+    background-color: #69696b;
+    border-radius: 10px;
+    border: transparent;
+    font-family: Verdana;
+    height: 25px;
+    cursor: pointer;
+}
