@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    background: rgba(35,35,36,1);
+    background: linear-gradient(90deg, rgba(35,35,36,1) 0%, rgba(17,17,17,1) 50%, rgba(35,35,36,1) 100%);
+}
+
+input[type="text"], input[type="password"] {
+    background-color: #69696b;
+    outline: none;
+    border: transparent;
+    border-radius: 10px;
+    padding: 4px 10px;
+    margin: 2px;
+    color: #fff;
+}
+
+select {
+    background-color: #69696b;
+    outline: none;
+    border: transparent;
+    border-radius: 10px;
+    padding: 4px 10px;
+    margin: 2px;
+    color: #fff;
+    width: 142px;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #dadada77;
+}
+
+label {
+    font-size: 14px;
+    margin: 6px;
+}
+
+input {
+    outline: none;
+}

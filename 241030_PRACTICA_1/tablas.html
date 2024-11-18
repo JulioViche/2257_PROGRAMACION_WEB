@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylebg.css">
+    <title>Tablas</title>
+</head>
+<body>
+    <header>
+        <h1>Tablas</h1>
+    </header>
+    <section>
+        <p>Uso de la etiqueta <em>table</em> para el envío y recibo de información.</p>
+        <table frame="void" rules="cols" class="formated_table">
+            <caption align="bottom">Promedio de edad de personas</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col class="formated_col">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Julio</td>
+                    <td>Viche</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Pablo</td>
+                    <td>Hernández</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Díaz</td>
+                    <td>22</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="2">Promedio</td>
+                <td>22</td>
+            </tfoot>
+        </table>
+        <h2>Formulario con formato</h2>
+        <form action="sumbit" method="post">
+            <input type="text" id="nombre" placeholder="Nombres">
+            <br>
+            <input type="text" id="apellido" placeholder="Apellidos">
+            <br>
+            <input type="password" id="contraseña" placeholder="Contraseña">
+            <br>
+            <label for="select">Tipo: </label>
+            <select id="">
+                <option>Estudiante</option>
+                <option>Docente</option>
+                <option>Administrativo</option>
+            </select>
+        </form>
+    </section>
+</body>
+</html>

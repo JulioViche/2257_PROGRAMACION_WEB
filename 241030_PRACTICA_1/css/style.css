@@ -59,3 +59,29 @@ dt {
     height: 25px;
     cursor: pointer;
 }
+
+.formated_table {
+    border-collapse: collapse;
+}
+
+tbody, thead, tfoot {
+    border: solid #dadada 2px;
+}
+
+.formated_table caption {
+    font-style: italic;
+    font-size: 14px;
+}
+
+th {
+    background: #69696b;
+}
+
+td {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.formated_col {
+    background-color: #69696b77;
+}
