@@ -1,0 +1,43 @@
+body {
+    background-color: #222229;
+}
+
+nav {
+    width: 100vw;
+}
+
+header {
+    text-align: center;
+    width: 100vw;
+}
+
+h1, h2, h3 {
+    color: #FFFC;
+}
+
+p {
+    color: #FFFA;
+}
+
+.main_container {
+    margin: auto;
+    width: 70vw;
+    display: flex;
+    flex-flow: row;
+}
+
+aside {
+    padding: 10px 10px;
+    flex: 1;
+}
+
+main {
+    padding: 0 10px;
+    flex: 4;
+}
+
+footer {
+    text-align: center;
+    width: 100vw;
+}
+

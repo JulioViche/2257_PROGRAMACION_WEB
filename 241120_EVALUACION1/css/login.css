@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    background-image: url("../img/wallpaper.jpeg");
+}
+
+.login {
+    background-color: #d7d7d7;
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px;
+    margin: 100px auto;
+    width: 200px;
+}
+
+.login image {
+    display: block;
+}
+
+.login input[type="text"], .login input[type="password"] {
+    border: none;
+    border-bottom: solid #777 1px;
+    margin: 10px 0;
+    height: 15px;
+    background-color: transparent;
+}
+
+.login a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 10px;
+    color: white;
+    background: linear-gradient(90deg, rgba(135,0,0,1) 0%, rgba(15,3,91,1) 100%);
+    padding: 5px;
+    border-radius: 5px;
+}
