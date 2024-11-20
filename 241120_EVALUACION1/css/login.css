@@ -1,22 +1,26 @@
 body {
     height: 100vh;
     background-image: url("../img/wallpaper.jpeg");
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .login {
-    background-color: #d7d7d7;
+    background-color: #d7d7d799;
     display: flex;
     justify-content: center;
     padding: 30px 30px;
     margin: 100px auto;
     width: 200px;
+    border-radius: 20px;
 }
 
-.login image {
+.login img {
+    width: 50%;
+    margin: auto;
     display: block;
 }
 
-.login input[type="text"], .login input[type="password"] {
+input[type="text"], input[type="password"] {
     border: none;
     border-bottom: solid #777 1px;
     margin: 10px 0;
