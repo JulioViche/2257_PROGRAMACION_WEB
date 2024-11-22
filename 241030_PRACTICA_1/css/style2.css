@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #222;
+}
+
+header {
+    background-color: #335;
+}
+
+.section1 {
+    height: 450px;
+    background-color: #222;
+    background-image: url(https://blog.knoldus.com/wp-content/uploads/2020/06/angular.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section2 {
+    background-image: url(https://placehold.jp/333333/ffffff/1900x1000.PNG?text=1900%20x%201000);
+    height: 1000px;
+    background-size: cover;
+}
+
+.section3 {
+    height: 500px;
+    background-image: url(../images/angular_wallpaper.png);
+    background-position: right;
+    background-size: 200%;
+    background-attachment: fixed;
+}
+
+/* placehold.jp */
