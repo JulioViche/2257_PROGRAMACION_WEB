@@ -1,9 +1,13 @@
 .profile_container {
     display: flex;
     flex-flow: column;
-
+    
     position: relative;
+    
+    background-color: #0004;
     padding: 20px;
+    border: solid 2px #FFF2;
+    border-radius: 10px;
     margin: auto;
     top: 100px;
 }
