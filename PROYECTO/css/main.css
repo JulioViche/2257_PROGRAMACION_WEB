@@ -39,7 +39,7 @@ h1, h2, h3 {
     margin: 20px 0;
 }
 
-p {
+p, span {
     color: #FFFA;
 
     margin: 10px 0 ;

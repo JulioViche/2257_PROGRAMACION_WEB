@@ -71,6 +71,7 @@ body:has(.card:hover) {
 .card_body label {
     display: inline-block;
     border-radius: 50px;
+    box-shadow: 1px 1px 3px #000;
     width: 20px;
     height: 20px;
 }

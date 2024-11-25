@@ -5,30 +5,39 @@
     position: relative;
     
     background-color: #0004;
-    padding: 20px;
+    padding: 50px 20px;
     border: solid 2px #FFF2;
     border-radius: 10px;
     margin: auto;
     top: 100px;
 }
 
-.profile_container img {
-    width: 150px;
+.avatar_container {
+    display: flex;
+    flex-flow: column;
+}
+
+.avatar_container img {
+    width: 120px;
     border-radius: 50%;
+    box-shadow: 0px 0px 10px #000;
     margin: auto;
+
+    object-fit: fill;
+
     transition: 0.25s;
 }
 
-.profile_container img:hover {
-    transform: scale(1.05);
+.avatar_container img:hover {
+    transform: scale(0.95);
 }
 
-.profile_container h1 {
+.avatar_container h1 {
     font-size: 25px;
     text-align: center;
 }
 
-.profile_container p {
+.avatar_container span {
     margin: 0 auto 10px;
 }
 

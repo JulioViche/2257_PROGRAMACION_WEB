@@ -1,0 +1,9 @@
+#noticia {
+    width: 700px;
+    padding: 10px;
+    border: 1px solid #000;
+
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: solid 2px #777;
+}
