@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    background-color: #333;
+}
+
+@keyframes cambiarcolores {
+    0% {
+        background-color: #777;
+    }
+    25% {
+        background-color: #666;
+        transform: scale(.95);
+    }
+    50% {
+        background-color: #999;
+        transform: scale(1.05);
+    }
+    75% {
+        background-color: #666;
+        transform: scale(.95);
+    }
+    100% {
+        background-color: #777;
+        transform: scale(1);
+    }
+}
+
+.circulo {
+    background-color: #CCC;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: cambiarcolores 2s infinite;
+}
+
+@keyframes volar {
+    0% {
+
+    }
+    20% {
+        transform: translate(200px, 0) rotateZ(-10deg);
+    }
+    20.05% {
+        transform: translate(300px, 30px), rotateZ(-50deg);
+    }
+    31% {
+        transform: translate(800px, 0) rotateZ(0deg);
+    }
+    70% {
+        transform: translate(0, -30px);
+    }
+}
+
+.avion {
+    background-color: #CCC;
+    margin: 100px 20px;
+    width: 100px;
+    height: 10px;
+    border-radius: 0 50% 30% 50%;
+    animation-name: cambiarcolores, volar;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.screen {
+    background-color: #000;
+    width:500px;
+    height: 350px;
+    border: solid 3px #CCC;
+    margin: 100px auto;
+}
+
+.bar {
+    position: relative;
+    top: 320px;
+    background-color: #070;
+    border-radius: 5px;
+    width: 100px;
+    height: 10px;
+
+    animation: movebar 2s infinite linear;
+}
+
+.ball {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #D00;
+
+    animation: moveball 2s infinite linear;
+}
+
+@keyframes movebar {
+    0% {
+
+    }
+    15% {
+        transform: translateX(200px);
+    }
+    23% {
+        background-color: #070;
+    }
+    25% {
+        background-color: #3F3;
+    }
+    27% {
+        background-color: #070;
+    }
+    50% {
+        transform: translateX(300px);
+    }
+    73% {
+        background-color: #070;
+    }
+    75% {
+        transform: translateX(50px);
+        background-color: #3F3;
+    }
+    77% {
+        background-color: #070;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveball {
+    0% {
+
+    }
+    25% {
+        transform: translate(245px, 320px);
+    }
+    50% {
+        transform: translateX(490px);
+    }
+    75% {
+        transform: translate(100px, 320px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

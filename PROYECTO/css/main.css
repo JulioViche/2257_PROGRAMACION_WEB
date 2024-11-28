@@ -39,10 +39,15 @@ h1, h2, h3 {
     margin: 20px 0;
 }
 
-p, span {
+p {
     color: #FFFA;
-
+    text-align: justify;
     margin: 10px 0 ;
+}
+
+span {
+    color: #FFFA;
+    margin: auto;
 }
 
 input {
@@ -67,7 +72,7 @@ input::placeholder {
 aside {
     flex: 1;
 
-    padding-left: 60px;
+    padding: 0 50px 0 30px;
 }
 
 aside a {
@@ -95,16 +100,18 @@ footer {
     text-align: center;
 }
 
+footer p {
+    text-align: center;
+}
+
 .main_container {
     display: flex;
     flex-flow: row;
 
     margin: auto;
-    padding: 0 50px;
+    padding: 0 100px;
 }
 
 .sections_container {
     flex: 4;
-    
-    padding: 0 50px;
 }
