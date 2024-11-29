@@ -134,18 +134,18 @@ body {
 
 @keyframes moveball {
     0% {
-
+        transform: translateX(490px);
     }
     25% {
         transform: translate(245px, 320px);
     }
     50% {
-        transform: translateX(490px);
+        transform: translateX(0);
     }
     75% {
         transform: translate(100px, 320px);
     }
     100% {
-        transform: translateX(0px);
+        transform: translateX(490px);
     }
 }
