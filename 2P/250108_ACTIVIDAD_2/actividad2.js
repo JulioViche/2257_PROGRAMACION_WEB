@@ -31,7 +31,7 @@ const inventario = {
         console.log(`Se vendieron ${cantidad} unidades de ${productoSeleccionado.nombre}. Valor: $${cantidad * productoSeleccionado.precio}`);
     },
     aplicarDescuento: function (descuento) {
-        if (descuento <= 0) {
+        if (descuento <= 0 || descuento > 1) {
             console.log('No se pudo aplicar el descuento.');
             return;
         }
@@ -39,7 +39,12 @@ const inventario = {
         for (producto in this.productos) {
             producto.precio *= 1 - descuento;
         }
+
+        console.log(`Descuento de ${descuento * 100}% aplicado.`)
     }
 }
 
 inventario.vender('Shampoo', 421);
+inventario.vender('Pasta dental', 5);
+inventario.aplicarDescuento(0.1);
+inventario.vender('Cepillo dental', 10);
