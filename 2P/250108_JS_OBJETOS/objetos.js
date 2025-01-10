@@ -121,3 +121,49 @@ console.log(Object.entries(obj));
 Object.seal(obj);
 let objString = JSON.stringify(obj);
 console.log(objString);
+
+let personaGet = {
+    nombre: 'Marco',
+    apellido: 'Valdiviezo',
+    edad: 50,
+    get nombreCompleto () {
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+console.log(personaGet.nombreCompleto);
+
+let personaSet = {
+    nombre: 'Marco',
+    apellido: 'Valdiviezo',
+    edad: 50,
+    email: 'mvaldiviezo@espe.edu.ec',
+    idioma: 'es',
+    get lang() {
+        return this.idioma.toUpperCase();
+    },
+    set lang(idioma) {
+        this.idioma = idioma;
+    },
+    get nombreCompleto () {
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+console.log(personaSet.lang);
+personaSet.lang = 'en';
+console.log(personaSet.lang);
+
+function PersonaFC(nombre, apellido, email) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.nombreCompleto = () => {
+
+    };
+}
+
+let padre = new PersonaFC('Juan', 'Sánchez', 'jsanchez@mail.com');
+let madre = new PersonaFC('María', 'Fernández', 'mfernandez@mail.com');
+console.log(padre);
+console.log(madre);
