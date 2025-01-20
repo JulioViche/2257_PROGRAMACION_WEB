@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <style>
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loop()">Cambiar</button>
+    <button onclick="noloop()">Pausar</button>
+    <br>
+    <img id="imagen" width="500">
+    <script>
+        let imagen = document.getElementById('imagen');
+        let srcs = ['img1.png', 'img2.png', 'img3.png', 'img4.png', 'img5.png'];
+        let i = 0;
+        let interval = setInterval(cambiarImagen, 1000);
+
+        function cambiarImagen() {
+            imagen.src = srcs[i];
+            if (i === 4) i = 0;
+            else i++;
+        }
+
+        function loop() {
+            if(interval) return;
+            interval = setInterval(cambiarImagen, 2500);
+        }
+
+        function noloop() {
+            if(!interval) return;
+            clearInterval(interval);
+            interval = null;
+        }
+    </script>
+</body>
+</html>

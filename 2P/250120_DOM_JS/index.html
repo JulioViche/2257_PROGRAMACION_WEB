@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in Javascript</title>
+    <style>
+        .azul {
+            color: #117;
+        }
+        .rojo {
+            color: #911;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="cabecera">Ejemplo del DOM con JS</h1>
+        <p id="parrafo" class="azul">¡Saludos!</p>
+        <p class="rojo">Segundo párrafo</p>
+        <p class="azul">Tercer párrafo</p>
+    </header>
+    <script>
+        // GET ELEMENT BY ID
+        let cabecera = document.getElementById("cabecera");
+        let parrafo = document.getElementById("parrafo");
+        console.log(`Valor de cabecera: ${cabecera.innerHTML}`);
+        console.log(`Valor original del primer párrafo: ${parrafo.innerHTML}`);
+
+        parrafo.innerHTML = 'Nuevo valor del párrafo.';
+
+        // GET ELEMENTS BY TAG NAMES
+        let parrafos = document.getElementsByTagName('p');
+        console.log(`Número de párrafos: ${parrafos.length}`);
+        console.log(`Valor de segundo párrafo: ${parrafos[1].innerHTML}`);
+
+        // GET ELEMENTS BY CLASS NAME
+        let parrafosAzules = document.getElementsByClassName('azul');
+        console.log(`Número de párrafos azules: ${parrafosAzules.length}`);
+
+        // QUERY SELECTOR (ALL)
+        let elementos1 = document.querySelectorAll('p.azul');
+        console.log(`Valor del primer párrafo azul: ${elementos1[0].innerHTML}`);
+        let elemento2 = document.querySelectorAll("#cabecera");
+        console.log(`Valor de la cabecera: ${elemento2[0].innerHTML}`);
+    </script>
+</body>
+</html>

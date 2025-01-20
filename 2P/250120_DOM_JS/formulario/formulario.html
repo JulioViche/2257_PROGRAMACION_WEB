@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario" action="">
+        Nombre: <input type="text" name="nombre" value="Juan">
+        <br>
+        Apellido: <input type="text" name="apellido" value="Pérez">
+    </form>
+    <button onclick="mostrarValores()" type="sumbit">Mostrar</button>
+    <div id="valores"></div>
+    <button onclick="mostrar()">Paisajes</button>
+    <button onclick="adios()">¡ADIOS!</button>
+    <script>
+        function mostrarValores() {
+            let formulario = document.forms['formulario'];
+            let valores = document.getElementById('valores');
+
+            let nombre = formulario['nombre'].value;
+            let apellido = formulario['apellido'].value;
+
+            valores.innerHTML = nombre + '  ' +  apellido + '<br>';
+        }
+
+        function adios() {
+            document.write('¡ADIOS!');
+        }
+
+        function mostrar() {
+            document.write('<h1 id="titulo">Imagenes</h1> <img id="img1" width="500"></img> <img id="img2" width="500"></img>');
+            let titulo = document.getElementById('titulo');
+            let img1 = document.getElementById('img1');
+            let img2 = document.getElementById('img2');
+
+            img1.src = 'img1.png';
+            img2.src = 'img2.png';
+            titulo.style.color = '#171';
+        }
+    </script>
+</body>
+</html>

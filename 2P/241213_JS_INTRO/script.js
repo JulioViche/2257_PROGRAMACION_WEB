@@ -63,3 +63,5 @@ console.log(parseInt('abc'));
 console.log(Number('234px'));
 console.log(Number('3.14159'));
 console.log(Number('abc'));
+
+// => <= >= == === -> != && || <- <== ==> !== ?= := --> <--
