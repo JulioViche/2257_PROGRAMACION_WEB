@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de eventos</title>
+</head>
+<!-- ONLOAD FUNCIONA SOLO EN EL BODY -->
+<body> 
+    <h1 onclick="cambiarTexto(this)">Título Original</h1>
+    <h1 id="titulo">Título Original</h1>
+    <br>
+    Nombre: <input type="text" name="nombre" id="nombre" onchange="convertir(this)">
+    <p onmouseover="color(this, 'red')" onmouseout="color(this, 'black')" onclick="color(this, 'green')" onmousedown="background(this, '#555')" onmouseup="background(this, '#DDD')">Pasa por aquí el mouse.</p>
+    Apellido: <input type="text" name="nombre" id="nombre" onfocus="background(this, '#DDF')" onblur="background(this, '#FFF')">
+    <br>
+    <button id="boton1">Hola</button>
+    <script>
+        function cambiarTexto(titulo) {
+            titulo.innerHTML = 'Título Nuevo';
+        }
+
+        function cambiarTextoOnclick() {
+            document.getElementById('titulo').innerHTML = 'Título Onclick';
+        }
+
+        function entrar() {
+            let texto = navigator.cookieEnabled ? 'Cookies habilitadas' : 'Cookies no habilitadas'; // Cookies
+            alert(texto);
+        }
+
+        document.getElementById('titulo').onclick = cambiarTextoOnclick;
+
+        // ---------------------------------------------------------------------------------------
+        
+        function convertir(input) {
+            input.value = input.value.toUpperCase();
+        }
+
+        function color(p, style) {
+            p.style.color = style;
+        }
+
+        function background(p, style) {
+            p.style.background = style;
+        }
+
+        // ---------------------------------------------------------------------------------------
+
+        function accion(evento) {
+            let componente = evento.target;
+            componente.style.background = 'red';
+        }
+
+        document.getElementById('boton1').addEventListener('click', accion);
+
+        document.getElementById('boton1').addEventListener('mouseover', (e) => {
+            let componente = e.target;
+            componente.style.background = 'blue';
+        });
+
+    </script>
+</body>
+</html>

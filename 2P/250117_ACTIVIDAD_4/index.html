@@ -20,7 +20,9 @@
         let imagen = document.getElementById('imagen');
         let srcs = ['img1.png', 'img2.png', 'img3.png', 'img4.png', 'img5.png'];
         let i = 0;
-        let interval = setInterval(cambiarImagen, 1000);
+        let interval = null;
+
+        imagen.src = srcs[0];
 
         function cambiarImagen() {
             imagen.src = srcs[i];
@@ -30,7 +32,7 @@
 
         function loop() {
             if(interval) return;
-            interval = setInterval(cambiarImagen, 2500);
+            interval = setInterval(cambiarImagen, 2000);
         }
 
         function noloop() {

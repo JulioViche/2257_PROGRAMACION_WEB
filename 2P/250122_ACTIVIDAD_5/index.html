@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5</title>
+    <style>
+        #config-panel {
+            background-color: #7777;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Título</h1>
+    <button id="config-button">Mostrar panel de configuración</button>
+    <div id="config-panel">
+        <h2>Panel de configuración</h2>
+        <form id="form" action="sumbit">
+            Título: <input id="title-input" type="text" name="title">
+            <br>
+            Color: <input id="color-input" type="color" name="color" value="white">
+            <br>
+            Comentarios: <input id="comments-check" type="checkbox" name="comments-check" checked>
+            <br>
+            <textarea name="comments" id="comments-textarea"></textarea>
+        </form>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+        </ul>
+    </div>
+
+    <script>
+        let configPanel = false;
+
+        document.getElementById('config-button').addEventListener('click', (event) => {
+            if (configPanel) {
+                document.getElementById('config-panel').style.display = 'none';
+                configPanel = false;
+            } else {
+                document.getElementById('config-panel').style.display = 'block';
+                configPanel = true;
+            }
+        });
+
+        document.getElementById('title-input').addEventListener('change', (event) => {
+            document.getElementById('title').innerHTML = event.target.value;
+        });
+
+        document.getElementById('color-input').addEventListener('change', (event) => {
+            document.body.style.background = event.target.value;
+        });
+
+        document.getElementById('comments-check').addEventListener('change', (event) => {
+            document.getElementById('comments-textarea').disabled = !event.target.checked;
+        });
+
+        let items = document.getElementsByTagName('li');
+        for (let item of items) {
+            item.addEventListener('click', (event) => {
+                event.target.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+</html>
