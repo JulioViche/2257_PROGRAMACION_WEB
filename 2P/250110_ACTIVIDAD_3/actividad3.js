@@ -55,7 +55,6 @@ class ConductorVIP extends Conductor {
 }
 
 // EKEMPLO
-
 const conductor1 = new Conductor('Carlos', 'ABC12345');
 conductor1.registrarRuta('Ruta 1');
 console.log(`Licencia de ${conductor1.nombre}: ${conductor1.obtenerLicencia()}`);

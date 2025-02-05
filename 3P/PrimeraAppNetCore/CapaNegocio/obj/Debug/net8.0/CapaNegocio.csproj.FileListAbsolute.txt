@@ -1,0 +1,17 @@
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\bin\Debug\net8.0\CapaNegocio.deps.json
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\bin\Debug\net8.0\CapaNegocio.dll
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\bin\Debug\net8.0\CapaNegocio.pdb
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\bin\Debug\net8.0\CapaDatos.dll
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\bin\Debug\net8.0\CapaEntidad.dll
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\bin\Debug\net8.0\CapaDatos.pdb
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\bin\Debug\net8.0\CapaEntidad.pdb
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\CapaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\CapaNegocio.AssemblyInfoInputs.cache
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\CapaNegocio.AssemblyInfo.cs
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\CapaNego.81B9D119.Up2Date
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\CapaNegocio.dll
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\refint\CapaNegocio.dll
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\CapaNegocio.pdb
+C:\Users\Windows\source\repos\PrimeraAppNetCore\CapaNegocio\obj\Debug\net8.0\ref\CapaNegocio.dll
